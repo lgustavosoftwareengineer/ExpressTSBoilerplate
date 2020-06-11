@@ -10,7 +10,7 @@ import * as express from 'express';
     
     // Rotas
         routes.get('/', (request: Request, response: Response) => {
-            response.json({msg:'hello world'});
+            return response.json({msg:'hello world'});
         })
 
 export default routes;

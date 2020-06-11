@@ -4,10 +4,10 @@ import app from './app'
 
     // Mensagem do terminal
         function msgInTerminal() {
-            console.log(" --> The server its running in the link: \n -> https://localhost:8081...")
+            console.log(` --> The server its running in the link: \n -> https://localhost:${port}...`)
         }
     // Definindo a porta
-        const port = 8081;
+        const port = 3000;
 
  // Rodando o servidor
 app.listen(port, msgInTerminal)

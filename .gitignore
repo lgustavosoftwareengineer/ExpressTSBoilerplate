@@ -1,1 +1,4 @@
+# Não enviando o node_modules para otimizar o push
 node_modules
+# Não enviando o banco de dados para o github
+db.sqlite
