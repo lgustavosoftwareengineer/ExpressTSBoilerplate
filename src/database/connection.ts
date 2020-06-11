@@ -23,14 +23,16 @@ import * as path from 'path'
             throw err
         } else {
             console.log('Connected to the SQLite database.')
-            db.run(creatingTableUser, (err) => {
-                    if (err) {
-                        console.log('Table already exist')
-                    } else {
-                        db.run(insert, admin)
-                        db.run(insert, user)
+            // Creating the table users
+                db.run(creatingTableUser, (err) => {
+                        if (err) {
+                            console.log('Table already exist')
+                        } else {
+                            // Inserting data
+                                db.run(insert, admin)
+                                db.run(insert, user)
+                        }
                     }
-                }
                 )
         }
     })
